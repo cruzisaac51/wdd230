@@ -1,0 +1,201 @@
+:root {
+    --white: #ffffff;
+    --primary: #FFC107;
+    --secondary: #0097A7;
+    --gray: #757575;
+    --dark: #212121;
+}
+
+
+/* globales*/
+
+html {
+    box-sizing: border-box;
+    /* Hack para box model */
+    min-height: 100%;
+    /* scroll-snap-type: y mandatory; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p {
+    line-height: 2;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 100%;
+}
+
+#currentdate,
+#currentdate2 {
+    color: rgb(18, 19, 18);
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h1 span {
+    font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.shadow {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+}
+
+.hero {
+    height: 450px;
+    background-image: url(../images/islaverdefliped.jpeg);
+    background-size: cover;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.content-hero {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.content-hero-img {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.content-hero h2 {
+    color: var(--white);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 5rem;
+}
+
+.content-hero p {
+    color: var(--white);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: span 6;
+    justify-self: center;
+}
+
+.content-hero a {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+}
+
+.button,
+.lesson {
+    background-color: var(--secondary);
+    color: var(--white);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.lesson,
+.button:hover {
+    cursor: pointer;
+}
+
+ul {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0;
+    margin-top: -150px;
+    margin-left: 30%;
+}
+
+li {
+    padding: 1rem;
+}
+
+
+/* .services {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+} */
+
+@media (max-width:768px) {
+    .content-hero {
+        display: flex;
+    }
+}
+
+.service {
+    text-align: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.iconos i {
+    font-size: 2rem;
+    color: var(--dark);
+}
