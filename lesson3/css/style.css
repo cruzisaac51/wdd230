@@ -115,7 +115,7 @@ h1 {
 
 .hero {
     height: 450px;
-    background-image: url(../lesson3/images/bgwheather.jpeg);
+    background-image: url(../images/bgwheather.jpeg);
     background-size: cover;
     margin-bottom: 2rem;
     position: relative;
