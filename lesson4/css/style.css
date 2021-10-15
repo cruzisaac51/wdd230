@@ -80,13 +80,18 @@ h1 {
 
 .action {
     display: flex;
-    background-color: rgba(240, 240, 240, 1);
-    margin: 1em 5em;
+    position: absolute;
+    top: 16rem;
+    left: 2rem;
+    background-color: rgb(60 137 61/ 70%);
+    margin: 1em 1em;
     padding: 1em;
     text-align: center;
     border-radius: 5px 5px 5px 5px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container {
