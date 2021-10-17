@@ -1,0 +1,21 @@
+@media (min-width: 480px) and (max-width:768px) {
+    .copyrights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+    }
+    .logo-name img {
+        width: 5em;
+    }
+    .contact-address {
+        display: flex;
+        align-items: stretch;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .contact-address ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 20px;
+    }
+}

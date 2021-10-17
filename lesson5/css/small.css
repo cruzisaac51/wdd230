@@ -1,0 +1,18 @@
+@media(max-width:480px) {
+    .copyrights {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-name img {
+        width: 5em;
+    }
+    .prestonname {
+        display: none;
+    }
+    .contact-address {
+        display: flex;
+        align-items: stretch;
+        margin: 10px;
+        flex-direction: column;
+    }
+}
