@@ -1,3 +1,16 @@
+const banner = document.getElementById("banner");
+let today = new Date();
+day = today.getDay();
+
+const showBanner = () => {
+    banner.style.display = "block";
+};
+
+if (day == 5) {
+    showBanner();
+}
+
+
 const d = new Date();
 const year = d.getFullYear();
 const fulldate = `${year}`;
