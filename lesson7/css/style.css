@@ -32,7 +32,6 @@ body {
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     min-height: 100%;
-    margin: 0 10px 0 10px;
 }
 
 #currentdate {
@@ -112,7 +111,7 @@ h1 {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 nav .active {
@@ -135,7 +134,6 @@ nav .active {
 
 .nav-bg {
     background-color: var(--secondary);
-    margin: 0 -10px 0 -10px;
 }
 
 .nav a {
@@ -212,6 +210,16 @@ nav .active {
 }
 
 .lastupdated {
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.norm:hover {box-shadow: 0 0 50px #333;}
+.visitdays{
     display: flex;
     justify-content: center;
 }
