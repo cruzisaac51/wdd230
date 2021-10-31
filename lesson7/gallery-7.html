@@ -1,116 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Cruz | WDD230 assignment: wheater4yall</title>
-    <meta name="description" content="three types of websites style's">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isaac Cruz | WDD230 assignment: wheater4yall</title>
+        <meta name="description" content="three types of websites style's">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="http://font.googleapis.com" />
-    <!-- <link href=" https://fonts.googleapis.com/css?family=Krub:400,700 " rel="stylesheet "> -->
-    <link rel="stylesheet " href="css/style.css ">
-    <link rel="stylesheet " href="css/large.css ">
-    <link rel="stylesheet " href="css/medium.css ">
-    <link rel="stylesheet " href="css/small.css ">
-</head>
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="http://font.googleapis.com" />
+        <link href=" https://fonts.googleapis.com/css?family=Krub:400,700 " rel="stylesheet ">
+        <link rel="stylesheet " href="css/style.css ">
+        <link rel="stylesheet " href="css/large.css ">
+        <link rel="stylesheet " href="css/medium.css ">
+        <link rel="stylesheet " href="css/small.css ">
+    </head>
 
-<body>
+    <body>
 
-    <div class="banner" id="banner" style="display: none">
-        <p>
-            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-        </p>
-    </div>
-
-    <header>
-        <div class="logo-name">
-            <img src="../lesson4/images/logo.png" alt="logo weather4y'all">
-            <h1>Wheather 4 y'all <br><span>the weather for you</span></h1>
-
+        <div class="banner" id="banner" style="display: none">
+            <p>
+                Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+            </p>
         </div>
-    </header>
 
-    <div class=" nav-bg">
-        <nav class="nav container">
-            <ul class="navigation">
-                <li>
-                    <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
-                </li>
-                <li><a href=" ../index.html ">Home</a></li>
-                <li><a href="preston-6.html"> Preston</a> </li>
-                <li><a href="#"> Soda Springs </a></li>
-                <li><a href="#"> Fish Haven </a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="gallery-7.html" class="active">Galery</a></li>
-            </ul>
-        </nav>
-    </div>
+        <header>
+            <div class="logo-name">
+                <img src="../lesson4/images/logo.png" alt="logo weather4y'all">
+                <h1>Wheather 4 y'all <br><span>the weather for you</span></h1>
 
-    <h2 class="prestonname1">Preston Idaho</h2>
-    <main class="container">
-        <h1>Weather Gallery</h1>
-        <section>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/472/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>the mists that overhung the valley</p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/232/300/400"
-                    alt=" Lorem Picsum"
-            /><p>Snow in central Park,</p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/372/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>Sunny day in Miami Beach</p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/398/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>sunny day in cuba,</p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/430/300/400"
-                    alt=" Lorem Picsum"
-            /><p>Cloudy day in New York City </p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/172/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>the mists that overhung the lake</p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/572/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>the snowy mountains of nepal </p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/872/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>cloudy day on rio di janeiro </p></picture>
-            <picture
-                ><img class="norm"
-                    src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
-                    data-src="https://picsum.photos/id/972/300/400.webp"
-                    alt=" Lorem Picsum"
-            /><p>Misty day in chicago</p></picture>
-        </section>
+            </div>
+        </header>
+
+        <div class=" nav-bg">
+            <nav class="nav container">
+                <ul class="navigation">
+                    <li>
+                        <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
+                    </li>
+                    <li><a href=" ../index.html ">Home</a></li>
+                    <li><a href="preston-6.html"> Preston</a> </li>
+                    <li><a href="#"> Soda Springs </a></li>
+                    <li><a href="#"> Fish Haven </a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html" class="active">Galery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="container">
+            <h1>Weather Gallery</h1>
+            <section>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/472/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>The mists that overhung the valley</h4></figcaption>
+                    
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/232/300/400"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Snow in central Park</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/372/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Sunny day in Miami Beach</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/398/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Sunny day in cuba</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/430/300/400"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Cloudy day in New York City</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/172/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>The mists that overhung the lake</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/572/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>The snowy mountains of nepal</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/872/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Cloudy day on rio di janeiro</h4></figcaption>
+                </figure>
+                <figure>
+                    <picture
+                        ><img class="norm"
+                            src="https://dummyimage.com/300x400/f0f0f0/f0f0f0"
+                            data-src="https://picsum.photos/id/972/300/400.webp"
+                            alt=" Lorem Picsum"
+                    /></picture>
+                    <figcaption class="textcenter"><h4>Misty day in chicago</h4></figcaption>
+                </figure>
+            </section>
         </main>
+        <footer>
             <div class="social ">
                 <div class="copyrights ">
                     <p>
@@ -127,12 +154,12 @@
                     <span id="lastUpdated">
                 </span>
                 </div>
-                <div class="visitdays"><span id="container"></span></div>
+                <div class="visitdays">
+                    <span id="container"></span>
+                </div>
                 <script src="js/script.js"></script>
 
             </div>
         </footer>
-    </div>
-</body>
-
+    </body>
 </html>
