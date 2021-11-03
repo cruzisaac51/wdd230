@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Cruz | WDD230 assignment: wheater4yall</title>
+    <meta name="description" content="three types of websites style's">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="http://font.googleapis.com" />
+    <!-- <link href=" https://fonts.googleapis.com/css?family=Krub:400,700 " rel="stylesheet "> -->
+    <link rel="stylesheet " href="css/style.css ">
+    <link rel="stylesheet " href="css/large.css ">
+    <link rel="stylesheet " href="css/medium.css ">
+    <link rel="stylesheet " href="css/small.css ">
+</head>
+
+<body>
+
+    <div class="banner" id="banner" style="display: none">
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+
+    <header>
+        <div class="logo-name">
+            <img src="../lesson4/images/logo.png" alt="logo weather4y'all">
+            <h1>Wheather 4 y'all <br><span>the weather for you</span></h1>
+
+        </div>
+    </header>
+
+    <div class=" nav-bg">
+        <nav class="nav">
+            <ul class="navigation">
+                <li>
+                    <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
+                </li>
+                <li><a href=" ../index.html ">Home</a></li>
+                <li><a href="#" > Preston</a> </li>
+                <li><a href="#"> Soda Springs </a></li>
+                <li><a href="#"> Fish Haven </a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="#">Galery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container shadow ">
+        <h2>Storm Center - Report a Storm</h2>
+        <main>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter's information</legend>
+                    <label class="top">Full name* <input type="text" name="fname" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="example@example.com"></label>
+                    <label class="top">Zip code* <input type="number" name="number" placeholder="1234" required></label>                
+                </fieldset>
+                <fieldset>
+                    <legend>Storm information</legend>
+                    <label class="top">Date of Storm <input type="date" name="completeDate"></label>
+                    <label for="typeofstorms" class="top">Type of Storm 
+                        <input list="typeofstorm" name="typeofstorms" id="typeofstorms">
+                        <datalist id="typeofstorm">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Ice storm">
+                            <option value="Lightning storm.">
+                            <option value="Thunderstorms.">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label class="slider-horizontal">Storm severity <br><input type="range" min="1" max="10" value="5" id="myRange"> <span id="demo"></span></label>
+                    <label class="top">Storm Region
+                        <select name="subject">
+                                 <option value="">Please select &#9662;</option>
+                            <option value="Preston">Preston Idaho</option>
+                            <option value="Soda">Soda Springs</option>
+                            <option value="Fish">Fish Haven</option>
+                        </select>
+                    </label>
+               </fieldset>
+               <fieldset>
+                    <legend>Aditional information</legend>
+                    <div class="radio">Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="audience" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="audience" value="maybe">Maybe</label>
+                    <label class="sbs"><input type="radio" name="audience" value="no">No</label>
+                    <label for="subject" class="top">Additional Comments</label>
+                    <textarea id="subject" name="subject"></textarea>
+                </fieldset>
+                <input type="submit" value="Report Storm" class="submitBtn">
+        
+            </form>
+                
+        
+                  
+                
+            </main>
+        <footer>
+            <div class="social ">
+                <div class="copyrights ">
+                    <p>
+                        &copy;
+                        <span id="dateyear"></span>|Isaac Cruz - WDD 230
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>San Juan, Puerto Rico</p>
+                        <p><a href="https://www.byui.edu/online ">BYU | online | Learning |</a></p>
+                </div>
+                <div class="lastupdated">
+                    <span id="lastUpdated">
+                </span>
+                </div>
+                <script src="js/script.js"></script>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

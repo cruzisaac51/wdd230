@@ -1,0 +1,50 @@
+@media(max-width:480px) {
+    .copyrights {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-name img {
+        width: 5em;
+    }
+    .prestonname {
+        display: none;
+    }
+    .prestonname1 {
+        display: block;
+    }
+    .contact-address {
+        display: flex;
+        align-items: stretch;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .hero {
+        background-image: url(../images/small.jpg);
+        background-size: auto;
+        height: 17em;
+    }
+    .action {
+        top: 0;
+        width: min-content;
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .responsive li {
+        display: block;
+    }
+}

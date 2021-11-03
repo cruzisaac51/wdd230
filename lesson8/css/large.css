@@ -1,0 +1,43 @@
+@media (min-width: 1500px) {
+    .hero {
+        height: 650px;
+        background-image: url(../images/large.jpg);
+        margin-bottom: 2rem;
+    }
+    .navigation {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+        margin: 0;
+        list-style: none;
+        padding: 0.75rem;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation a {
+        font-size: 2em;
+    }
+    .action {
+        border-radius: 15px;
+        height: 30em;
+        width: 60em;
+    }
+    .weather h3 {
+        font-size: 2.5em;
+    }
+    .weather ul {
+        font-size: 2em;
+    }
+    form label.sbs{
+        padding:.4rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
