@@ -63,7 +63,73 @@ h3 {
 h1 {
     font-size: 2rem;
 }
+.header {
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: baseline;
+    padding: 0.2rem;
+    justify-content: flex-end;
+}
+.link {
+    background: var(--secondary);
+    border: solid;
+    border-radius: 5px;
+    color: var(--primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    font-family: "krub",sans-serif;
+    width: 150px;
+}
+.link-img{
+    cursor: pointer;
+}
+.link-img a{
+    width: 100%;
+    height: 100%;
+}
 
+.dropdown.active > .link,
+.link:hover {
+  color: black;
+}
+
+.dropdown {
+    position: fixed;
+    z-index: 4;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + .25rem);
+  background-color: white;
+  padding: .75rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+  
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: .25rem;
+}
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -106,7 +172,7 @@ h1 {
     margin-left: 2em;
 }
 
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35.5em) {
     .content-hero {
         display: flex;
         flex-direction: column;
@@ -114,6 +180,12 @@ h1 {
     }
     .content-hero h2 {
         margin: 0.5em;
+    }
+    .link{
+        width: 630px;
+    }
+    .header{
+        justify-content: center;
     }
 }
 
@@ -126,77 +198,20 @@ h1 {
     .content-hero h2 {
         margin: 0.5em;
     }
-}
-
-.navigation {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-    display: none;
-}
-
-.navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.responsive li {
-    display: block;
-}
-
-
-/* Media Query for medium+ views */
-
-@media only screen and (min-width: 32.5em) {
-    .navigation {
-        display: flex;
-        align-items: center;
-        align-content: space-between;
-        justify-content: space-between;
-        margin: 0;
+    .link{
+        width: 300px;
     }
-    .navigation li {
-        display: block;
-        /* change state in small view */
-        flex: 1 1 100%;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    .navigation li:first-child {
-        display: none;
+    .header{
+        justify-content:center;
     }
 }
 
-
-/* ham bureger menu------------------------------------- final*/
-
-.nav-bg {
-    background-color: var(--secondary);
+.entr{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
 }
-
-.nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.nav a:hover {
-    background-color: var(--primary);
-    color: var(--dark);
-}
-
-.nav a:last-of-type {
+.entr:last-of-type{
+    border-bottom: none;
     margin-bottom: 0;
 }
 
@@ -219,4 +234,40 @@ h1 {
         align-items: flex-end;
         padding: 10px;
     }
+}
+.slider-container a{
+    text-decoration: underline;
+}
+.lessons-slider{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.left, .right{
+    position: absolute;
+    font-size: 4em;
+    height: 50px;
+    border: none;
+    color:#0097A7;
+    background-color:#FFC107;
+    border-radius:100px;
+    top: 125%;
+}
+.left{
+    left: 0px;
+}
+.right{
+    right: 0px;
+}
+.lessons-slider, .slider-container{
+    white-space: nowrap;
+} 
+.lessons-slider, .slider-container, .slide{
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+    background-size: 100%;
+    background-position: 20%;
+    background-repeat: no-repeat;
 }
