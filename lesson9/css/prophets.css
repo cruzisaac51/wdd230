@@ -1,0 +1,76 @@
+
+main {
+  padding: 5% 2%;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+}
+.copyrights {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 10px;
+}
+.lastupdated {
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 100%;
+}
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "krub", sans-serif;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+section {
+  text-align: center;
+  box-shadow: 0 0 5px #333;
+}
+
+section div {
+  padding: 5px;
+}
+section img {
+  width: 90%;
+}
+
+section:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo-name{
+    padding: 0.5em 1em;
+  }
+
+}
+
+@media only screen and (min-width: 85em) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logo-name{
+    font-size: 4rem
+  }
+}
