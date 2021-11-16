@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Cruz | W09 ✅ Assignment: The Weather Site Home Page</title>
+    <meta name="description" content="home page lesson 9">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="http://font.googleapis.com" />
+    <!-- <link href=" https://fonts.googleapis.com/css?family=Krub:400,700 " rel="stylesheet "> -->
+    <link rel="stylesheet " href="css/style.css ">
+    <link rel="stylesheet " href="css/large.css ">
+    <link rel="stylesheet " href="css/medium.css ">
+    <link rel="stylesheet " href="css/small.css ">
+</head>
+
+<body>
+
+    <div class="banner" id="banner" style="display: none">
+        <p>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </p>
+    </div>
+
+    <header>
+        <div class="logo-name">
+            <img src="../lesson4/images/logo.png" alt="logo weather4y'all">
+            <h1>Wheather 4 Y'all <br><span>The weather for you</span></h1>
+
+        </div>
+    </header>
+
+    <div class=" nav-bg">
+        <nav class="nav">
+            <ul class="navigation">
+                <li>
+                    <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
+                </li>
+                <li><a href=" ../index.html ">Home</a></li>
+                <li><a href="#" > Preston</a> </li>
+                <li><a href="#"> Soda Springs </a></li>
+                <li><a href="#"> Fish Haven </a></li>
+                <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+                <li><a href="#">Galery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero ">
+        <div class="content-hero ">
+        </div>
+        <div class="action">
+            <div class="weather">
+                <h3>Wheather summary</h3>
+                <ul>
+                    <li>Currenly:<span>Sunny</span></li>
+                    <li>High:<span id="temp">72</span>°F</li>
+                    <li>Wind Chill:<span id="windchill"></span>°F</li>
+                    <li>Humidity:<span>69%</span></li>
+                    <li>Wind speed:<span id="windSpeed">5.5</span>mhp</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <main class="cards-container">
+            <h2 class="title">Home Page</h2>
+            <section class="the-section"></section>
+        </main>
+            <section class="article-sec">
+              <h3>Preston Posts</h3>
+              <img src="images/articleimg.webp" alt="weather" />
+              <article>
+                <h4>By Thaya Gilmore Citizen correspondent</h4>
+                <p>
+                    Veterans Day is tomorrow, Thurs., Nov. 11. We would like to thank all of the Veterans in 
+                    Preston and Franklin County for their years of service in defending our country during World War II, Vietnam,
+                     Korea, Iraq, Afghanistan and Kuwait. We salute you and honor you.
+
+                    Jaycee Carroll, renowned Utah State Aggie basketball player, shared his testimony and experiences about his being on the basketball team 
+                    as well as playing basketball professionally overseas in Europe. He was the guest speaker at a Tri-Stake Fireside for youth ages 11 through 18 
+                    and their leaders in the Preston South Stake, Franklin Stake, and Preston North Stake on Sun., Nov. 7, at the Preston North Stake Center.
+                    
+                    After three years serving in the Bishopric in the Preston Young Single Adult (YSA) Ward of the Smithfield YSA Stake,
+                     who meet at the Preston 10th Ward building in Preston, Idaho, were released Sun., Oct. 31. The new bishopric are Bishop: 
+                     Jeremy Smith; 1st Counselor: Marvin Sparrow; 2nd Counselor: David Priestley. Released were: Bishop: Jay Durtschi; 1st Counselor: 
+                     Ron Brackin; 2nd Counselor: Jeremy Smith.
+                    
+                    “I will miss our young single adults. I am proud of them and really going to miss them,” said Jay Durtschi
+                    .<br> <a href="https://www.hjnews.com/preston/preston-posts/article_167a052f-f55d-5dcd-83ac-a54eec42a36b.html">learn more</a>
+                </p>
+              </article>
+            </section>
+      
+            <address class="contact-address">
+                <img src="images/prestonmap.jpg" alt="preston map">
+                <ul><li><p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pinned" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 4v6l-2 4v2h10v-2l-2 -4v-6" />
+                    <line x1="12" y1="16" x2="12" y2="21" />
+                    <line x1="8" y1="4" x2="16" y2="4" />
+                  </svg></p><p>Preston Idaho</p></li>
+                  <li><p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="7" y="4" width="10" height="16" rx="1" />
+                    <line x1="11" y1="5" x2="13" y2="5" />
+                    <line x1="12" y1="17" x2="12" y2="17.01" />
+                  </svg></p><p>(+001)123456789</p></li>
+                  <li><p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <polyline points="3 7 12 13 21 7" />
+                  </svg></p><p>prestonweather@byui.edu</p></li></ul>
+            </address>
+          
+        <footer>
+            <div class="social ">
+                <div class="copyrights ">
+                    <p>
+                        &copy;
+                        <span id="dateyear"></span>|Isaac Cruz - WDD 230
+                        <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>San Juan, Puerto Rico</p>
+                        <p><a href="https://www.byui.edu/online ">BYU | online | Learning |</a></p>
+                </div>
+                <div class="lastupdated">
+                    <span id="lastUpdated">
+                </span>
+                </div>
+                <script src="js/script.js"></script>
+
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@media only screen and (min-width: 75em) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    .pinformation {
+      font-size: large;
+    }
+  
+    .card {
+      flex-direction: column;
+    }
+
+    .hero{
+        background-image: url(../images/large.webp)
+    }
+    .the-section {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .the-section h2 {
+        font-family: "krub", sans-serif;
+        color: var(--primary);
+    }
+    .article-sec{
+        height: 600px;
+    }
+      
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-between;
+        margin: 0;
+        height: 3em;
+    }
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+}

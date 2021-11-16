@@ -1,0 +1,80 @@
+@media(max-width:480px) {
+    .contact-address {
+        display: flex;
+        align-items: stretch;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .copyrights {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-name img {
+        width: 5em;
+    }
+    .prestonname {
+        display: none;
+    }
+    .prestonname1 {
+        display: block;
+    }
+    .contact-address {
+        display: flex;
+        align-items: stretch;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .hero {
+        background-image: url(../images/small.webp);
+        background-size: auto;
+        height: 17em;
+    }
+    .action {
+        top: 0;
+        width: min-content;
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .responsive li {
+        display: block;
+    }
+    .the-section .card {
+        margin-bottom:5px;
+        padding:5px;
+    }
+    .article-sec {
+        margin: 10px;
+        margin-bottom: 40px;
+        border-radius: 0px;
+        max-width: 100%;
+        height: auto;
+    }
+    .article-sec p{
+        margin: 10px;
+    }
+    .article-sec h3, h4 {
+        text-align: center;
+        color: var(--primary)
+      }
+      
+    .article-sec img {
+        margin: 5px;
+        float: none;
+        width: -webkit-fill-available;
+    }
+}
