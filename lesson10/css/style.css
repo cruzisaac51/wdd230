@@ -1,0 +1,265 @@
+:root {
+    --white: #ffffff;
+    --primary: #FFC107;
+    --secondary: #0097A7;
+    --gray: #757575;
+    --dark: #212121;
+}
+
+
+/* Globals --------------------------------*/
+
+html {
+    box-sizing: border-box;
+    /* Hack para box model */
+    min-height: 100%;
+    /* scroll-snap-type: y mandatory; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p {
+    line-height: 2;
+    text-align: center;
+    gap: 1rem;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    min-height: 100%;
+}
+
+#currentdate {
+    color: rgb(18, 19, 18);
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h1 span {
+    font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+}
+
+.logo-name img {
+    margin: 0.5em;
+}
+
+.action {
+    display: flex;
+    position: absolute;
+    min-width: -webkit-fill-available;
+    left: 0em;
+    background-color: rgb(60 137 61/ 70%);
+    margin: 1em 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.description {
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.description p {
+    text-align: left;
+}
+
+.artimg {
+    float: right;
+}
+
+nav .active {
+    background-color: var(--white);
+    border-radius: 5px;
+    border-width: 10px;
+}
+
+.weather ul {
+    list-style-type: none;
+}
+
+.weather span {
+    color: var(--headings-color);
+    padding: 0 0.8rem;
+    font-weight: bold;
+}
+
+.weather li {
+    text-align: left;
+    font-size: x-large;
+}
+.nav{
+    max-width: 1200px;
+    margin: auto;
+}
+.nav-bg {
+    background-color: var(--dark);
+}
+
+.nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    background-color: var(--white);
+    color: var(--dark);
+    border-radius: 5px;
+}
+
+.nav a:last-of-type {
+    margin-bottom: 0;
+}
+
+.hero {
+    height: 350px;
+    background-size: cover;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.content-hero {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.week {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: solid;
+    background-color: var(--dark);
+}
+.week h3, p{
+    color: var(--white);
+}
+
+.forecastday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--dark);
+}
+
+.contact-address ul {
+    list-style-type: none;
+    color: var(--white);
+}
+
+.contact-address img {
+    border-style: dashed;
+}
+
+.service img {
+    width: 100%;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 10px;
+}
+.copyrights p{
+    color:var(--dark);
+}
+
+.lastupdated {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color:var(--dark);
+}
+
+.article-sec {
+    background-color: var(--dark);
+    margin: 0px auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    max-width: 85%;
+    height: auto;
+}
+.article-sec p{
+    text-align: left;
+    color: var(--white);
+    margin: 1em 0em 2em 5em;
+}
+.article-sec h3, h4 {
+    text-align: center;
+    color: var(--primary)
+  }
+  
+.article-sec img {
+    margin: 20px 20px 20px 20px;
+    float: right;
+}
+.article-sec a{
+    text-decoration: none;
+    color: var(--primary);
+}
