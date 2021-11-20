@@ -88,7 +88,7 @@ main {
     position: absolute;
     min-width: -webkit-fill-available;
     left: 0em;
-    background-color: rgb(60 137 61/ 70%);
+    background-color: rgb(0 0 0 / 80%);
     margin: 1em 1em;
     padding: 1em;
     text-align: center;
@@ -119,13 +119,15 @@ nav .active {
     border-radius: 5px;
     border-width: 10px;
 }
-
+.weather{
+    color: var(--secondary);
+}
 .weather ul {
     list-style-type: none;
 }
 
 .weather span {
-    color: var(--headings-color);
+    color: var(--white);
     padding: 0 0.8rem;
     font-weight: bold;
 }
