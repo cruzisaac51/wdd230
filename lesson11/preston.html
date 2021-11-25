@@ -41,12 +41,12 @@
                 <li>
                     <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
                 </li>
-                <li><a href="index.html " class="active">Home</a></li>
-                <li><a href="#" > Preston</a> </li>
+                <li><a href="../lesson11/index.html ">Home</a></li>
+                <li><a href="../lesson11/preston.html" class="active"> Preston</a> </li>
                 <li><a href="#"> Soda Springs </a></li>
                 <li><a href="#"> Fish Haven </a></li>
-                <li><a href="stormcenter.html" >Storm Center</a></li>
-                <li><a href="#">Galery</a></li>
+                <li><a href="../lesson11/stormcenter.html" >Storm Center</a></li>
+                <li><a href="../lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </div>
@@ -57,22 +57,50 @@
             <div class="weather">
                 <h3>Wheather summary</h3>
                 <ul>
-                    <li>Currenly:<span>Sunny</span></li>
-                    <li>High:<span id="temp">72</span>°F</li>
+                    <li>Currenly: <span id="current-temp-string"></span> <img src="#" alt="#" id="icon"></li>
+                    <li>High<span id="current-temp"></span>&deg; F</li>
                     <li>Wind Chill:<span id="windchill"></span>°F</li>
-                    <li>Humidity:<span>69%</span></li>
-                    <li>Wind speed:<span id="windSpeed">5.5</span>mhp</li>
+                    <li>Humidity:<span id="humidity"></span>%</li>
+                    <li>Wind speed:<span id="windSpeed"></span>mhp</li>
                 </ul>
             </div>
         </div>
     </div>
-        <main class="cards-container">
-            <h2 class="title">Home Page</h2>
-            <section class="the-section"></section>
+    <div class="container shadow ">
+        <h2 class="title">Five day forecast</h2>
+        <main class="week ">
+            <div class="forecastday">
+                <h3><span id="dayofweek1"></span>.</h3>
+                <img src="#" alt="#" id="icon1">
+                <p><span id="forecast1"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweek2"></span>.</h3>
+                <img src="#" alt="#" id="icon2">
+                <p><span id="forecast2"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweek3"></span>.</h3>
+                <img src="#" alt="#" id="icon3">
+                <p><span id="forecast3"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweek4"></span>.</h3>
+                <img src="#" alt="#" id="icon4">
+                <p><span id="forecast4"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweek5"></span>.</h3>
+                <img src="#" alt="#" id="icon5">
+                <p><span id="forecast5"></span>&deg;F</p>
+            </div>
         </main>
+        <br>
+        <h4> Thanks to <a href="http://www.openweathermap.org">OpenWeatherMap</a> for the API </h4>
+    </div>
             <section class="article-sec">
               <h3>Preston Posts</h3>
-              <img src="images/articleimg.webp" alt="weather" />
+              <img src="../lesson9/images/articleimg.webp" alt="weather" />
               <article>
                 <h4>By Thaya Gilmore Citizen correspondent</h4>
                 <p>
@@ -134,6 +162,7 @@
                 </span>
                 </div>
                 <script src="js/script.js"></script>
+                <script defer src="js/forecast.js"></script>
 
             </div>
         </footer>
