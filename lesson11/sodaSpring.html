@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isaac Cruz | W11 ✨Submission: The Weather Site</title>
+    <title>Isaac Cruz | Soda Spring</title>
     <meta name="description" content="home page lesson 9">
 
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -41,9 +41,9 @@
                 <li>
                     <a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a>
                 </li>
-                <li><a href="../lesson11/index.html " class="active">Home</a></li>
+                <li><a href="../lesson11/index.html ">Home</a></li>
                 <li><a href="../lesson11/preston.html"> Preston</a> </li>
-                <li><a href="../lesson11/sodaSpring.html"> Soda Springs </a></li>
+                <li><a href="../lesson11/sodaSpring.html" class="active"> Soda Springs </a></li>
                 <li><a href="../lesson11/fishHaven.html"> Fish Haven </a></li>
                 <li><a href="../lesson11/stormcenter.html" >Storm Center</a></li>
                 <li><a href="../lesson11/gallery.html">Gallery</a></li>
@@ -55,33 +55,7 @@
         </div>
         <div class="action">
             <div class="weather">
-                <h3> <a href="../lesson11/preston.html">Preston Wheather</a></h3>
-                <img src="#" alt="#" id="icon">
-                <ul>
-                    <li>Currenly: <span id="current-temp-string"></span> </li>
-                    <li>High<span id="current-temp"></span>&deg; F</li>
-                    <li>Wind Chill:<span id="windchill"></span>°F</li>
-                    <li>Humidity:<span id="humidity"></span>%</li>
-                    <li>Wind speed:<span id="windSpeed"></span>mhp</li>
-                </ul>
-            </div>
-        </div>
-        <div class="action2">
-            <div class="weather">
-                <h3><a href="../lesson11/fishHaven.html">Fish Heaven Wheather</a></h3>
-                <img src="#" alt="#" id="iconfh">
-                <ul>
-                    <li>Currenly: <span id="current-temp-stringfh"></span> </li>
-                    <li>High<span id="current-tempfh"></span>&deg; F</li>
-                    <li>Wind Chill:<span id="windchillfh"></span>°F</li>
-                    <li>Humidity:<span id="humidityfh"></span>%</li>
-                    <li>Wind speed:<span id="windSpeedfh"></span>mhp</li>
-                </ul>
-            </div>
-        </div>
-        <div class="action3">
-            <div class="weather">
-                <h3><a href="../lesson11/sodaSpring.html">Soda Springs Wheather</a></h3>
+                <h3>Wheather summary</h3>
                 <img src="#" alt="#" id="iconSS">
                 <ul>
                     <li>Currenly: <span id="current-temp-stringSS"></span> </li>
@@ -93,31 +67,54 @@
             </div>
         </div>
     </div>
-        <main class="cards-container">
-            <h2 class="title">Home Page</h2>
-            <section class="the-section"><h6>.</h6></section>
+    <div class="container shadow ">
+        <h2 class="title">Five day forecast</h2>
+        <main class="week ">
+            <div class="forecastday">
+                <h3><span id="dayofweekSS1"></span>.</h3>
+                <img src="#" alt="#" id="iconSS1">
+                <p><span id="forecastSS1"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweekSS2"></span>.</h3>
+                <img src="#" alt="#" id="iconSS2">
+                <p><span id="forecastSS2"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweekSS3"></span>.</h3>
+                <img src="#" alt="#" id="iconSS3">
+                <p><span id="forecastSS3"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweekSS4"></span>.</h3>
+                <img src="#" alt="#" id="iconSS4">
+                <p><span id="forecastSS4"></span>&deg;F</p>
+            </div>
+            <div class="forecastday">
+                <h3><span id="dayofweekSS5"></span>.</h3>
+                <img src="#" alt="#" id="iconSS5">
+                <p><span id="forecastSS5"></span>&deg;F</p>
+            </div>
         </main>
+        <br>
+        <div class="cards-container">
+            <section class="the-sectionss"><h6>.</h6></section>
+        </div>
+        <br>
+        <h4> Thanks to <a href="http://www.openweathermap.org">OpenWeatherMap</a> for the API </h4>
+    </div>
             <section class="article-sec">
-              <h3>Preston Posts</h3>
-              <img src="images/articleimg.webp" alt="weatherimage" />
+              <h3>Soda Posts</h3>
+              <img src="../lesson9/images/sodaspring.webp" alt="weather" />
               <article>
-                <h4>By Thaya Gilmore Citizen correspondent</h4>
+                <h4>By kidnewsradio.com</h4>
                 <p>
-                    Veterans Day is tomorrow, Thurs., Nov. 11. We would like to thank all of the Veterans in 
-                    Preston and Franklin County for their years of service in defending our country during World War II, Vietnam,
-                     Korea, Iraq, Afghanistan and Kuwait. We salute you and honor you.
-
-                    Jaycee Carroll, renowned Utah State Aggie basketball player, shared his testimony and experiences about his being on the basketball team 
-                    as well as playing basketball professionally overseas in Europe. He was the guest speaker at a Tri-Stake Fireside for youth ages 11 through 18 
-                    and their leaders in the Preston South Stake, Franklin Stake, and Preston North Stake on Sun., Nov. 7, at the Preston North Stake Center.
-                    
-                    After three years serving in the Bishopric in the Preston Young Single Adult (YSA) Ward of the Smithfield YSA Stake,
-                     who meet at the Preston 10th Ward building in Preston, Idaho, were released Sun., Oct. 31. The new bishopric are Bishop: 
-                     Jeremy Smith; 1st Counselor: Marvin Sparrow; 2nd Counselor: David Priestley. Released were: Bishop: Jay Durtschi; 1st Counselor: 
-                     Ron Brackin; 2nd Counselor: Jeremy Smith.
-                    
-                    “I will miss our young single adults. I am proud of them and really going to miss them,” said Jay Durtschi
-                    .<br> <a href="https://www.hjnews.com/preston/preston-posts/article_167a052f-f55d-5dcd-83ac-a54eec42a36b.html">learn more</a>
+                    SODA SPRINGS, Idaho (KIFI) – Due to road conditions 
+                    and power bumps Soda Springs School District will be closed 
+                    Tuesday, Oct. 12. School will resume Wednesday as scheduled.
+                     The Idaho Transportation Department has responded to INL’s request to deploy
+                      a snow plow to Highway 20. Highway 20 is now open for cautious...
+                    .<br> <a href="https://www.dailyadvent.com/news/11a94b42e9d7648e93f95adde42b68fe-School-closure-Tuesday-Oct-12">learn more</a>
                 </p>
               </article>
             </section>
@@ -161,6 +158,7 @@
                 </span>
                 </div>
                 <script src="js/script.js"></script>
+                <script defer src="js/forecast.js"></script>
 
             </div>
         </footer>

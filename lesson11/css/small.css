@@ -27,11 +27,42 @@
     .hero {
         background-image: url(../images/small.webp);
         background-size: auto;
-        height: 17em;
+        height: 19em;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .action {
+    .content-hero{
+        display:block
+    }
+    .action, .action2, .action3{
         top: 0;
-        width: min-content;
+        display:block;
+        border-radius: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+    }
+    .action{
+        grid-row: 1;
+    }
+    .action2{
+        grid-row: 2;
+    }
+    .action3{
+        grid-row: 3;
+    }
+    .action ul{
+        display: none;
+    }
+    .action2 ul{
+        display: none;
+    }
+    .action3 ul{
+        display: none;
+    }
+    .weather{
+        display: flex;
+        align-items: center;
     }
     .navigation {
         list-style: none;

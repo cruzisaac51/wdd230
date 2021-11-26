@@ -150,6 +150,107 @@ fetch(apiURL)
 
     });
 
+// Soda Spring Weather
+const apiURLSS = `https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=f2872719ed7cdab5d0af213076f4c716`;
+fetch(apiURLSS)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        
+
+        
+        const currentTempStrign = document.querySelector('#current-temp-stringSS');
+        const currentTemp = document.querySelector('#current-tempSS');
+        const pathname = document.querySelector('#imagesrc');
+        const weathericon= document.querySelector('#iconSS');
+        const windSpeed = document.querySelector('#windSpeedSS');
+        const windChill = document.querySelector("#windchillSS");
+        const humidity = document.querySelector("#humiditySS");
+        
+        currentTempStrign.textContent = jsObject.weather[0].main;
+        currentTemp.textContent = jsObject.main.temp.toFixed(0);
+        windSpeed.textContent = jsObject.wind.speed.toFixed(0);
+        humidity.textContent =jsObject.main.humidity.toFixed(0);
+        let imgsrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+        let imgalt = jsObject.weather[0].description;
+        let capimgalt = '';
+        let i = 0;
+        for (i < imgalt.length; i++;) {
+            if (chartAt(i) === 0) {
+                capimgalt += imgalt.charAt(i).toUpperCase();
+            } else {}
+        }
+        imgalt = imgalt.charAt(0).toUpperCase() + imgalt.slice(1);
+        
+        
+
+        let windChill1 = 35.74 + (0.6215 * currentTemp) + (0.4275 * currentTemp - 35.75) * windSpeed ^ 0.16;
+        if (currentTemp <= 50 && windSpeed > 3){
+            windChill.textContent = windChill1;
+        } else {
+            windChill.textContent = "N/A";
+        }
+        
+        humidity.textContent =jsObject.main.humidity.toFixed(0);
+        currentTempStrign.textContent = jsObject.weather[0].main;
+        currentTemp.textContent = jsObject.main.temp.toFixed(0);
+        windSpeed.textContent = jsObject.wind.speed.toFixed(0);
+        weathericon.setAttribute('src', imgsrc); 
+        weathericon.setAttribute('alt', imgalt);
+        pathname.textContent = imgsrc;
+
+    });
+
+//Fish Haven
+const apiURLFH = `https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=f2872719ed7cdab5d0af213076f4c716`;
+fetch(apiURLFH)
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        
+
+        
+        const currentTempStrign = document.querySelector('#current-temp-stringfh');
+        const currentTemp = document.querySelector('#current-tempfh');
+        const pathname = document.querySelector('#imagesrc');
+        const weathericon= document.querySelector('#iconfh');
+        const windSpeed = document.querySelector('#windSpeedfh');
+        const windChill = document.querySelector("#windchillfh");
+        const humidity = document.querySelector("#humidityfh");
+        
+        currentTempStrign.textContent = jsObject.weather[0].main;
+        currentTemp.textContent = jsObject.main.temp.toFixed(0);
+        windSpeed.textContent = jsObject.wind.speed.toFixed(0);
+        humidity.textContent =jsObject.main.humidity.toFixed(0);
+        let imgsrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+        let imgalt = jsObject.weather[0].description;
+        let capimgalt = '';
+        let i = 0;
+        for (i < imgalt.length; i++;) {
+            if (chartAt(i) === 0) {
+                capimgalt += imgalt.charAt(i).toUpperCase();
+            } else {}
+        }
+        imgalt = imgalt.charAt(0).toUpperCase() + imgalt.slice(1);
+        
+        
+
+        let windChill1 = 35.74 + (0.6215 * currentTemp) + (0.4275 * currentTemp - 35.75) * windSpeed ^ 0.16;
+        if (currentTemp <= 50 && windSpeed > 3){
+            windChill.textContent = windChill1;
+        } else {
+            windChill.textContent = "N/A";
+        }
+        
+        humidity.textContent =jsObject.main.humidity.toFixed(0);
+        currentTempStrign.textContent = jsObject.weather[0].main;
+        currentTemp.textContent = jsObject.main.temp.toFixed(0);
+        windSpeed.textContent = jsObject.wind.speed.toFixed(0);
+        weathericon.setAttribute('src', imgsrc); 
+        weathericon.setAttribute('alt', imgalt);
+        pathname.textContent = imgsrc;
+
+    });
 // lazy load 
 
 let imagesToLoad = document.querySelectorAll("img[data-src]");
@@ -203,3 +304,124 @@ const populateStorage = () => {
 const setStyles = () => {
   localStorage.setItem("daysVisited", timestamp);
 };
+
+//preston info
+const thejsonurlPreston = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+const townApiP = async (key, value) => {
+    try {
+        const responseP = await fetch(`${thejsonurlPreston}`);
+        const responsepart2P = await responseP.json();
+        let listofitmP = responsepart2P[key];
+        listofitmP.forEach((element) => {
+            if (element.name === value) {
+                //create elements
+                const createCardsP = document.createElement("div");
+                let cardinfoP = document.createElement("div");
+                let titleh2P = document.createElement("h2");
+                let pinformationP = document.createElement("p");
+                let events = document.createElement("p");
+
+                //set attributes
+                createCardsP.setAttribute("class", "card");
+                pinformationP.setAttribute("class", "motto-card");
+                events.setAttribute("class", "par-card");
+
+                //insert elements
+                titleh2P.innerHTML = `Upcoming Events`;
+                pinformationP.innerHTML = element.motto;
+                events.innerHTML = `${element.events[0]} <br> ${element.events[1]} <br> ${element.events[2]}`;
+                cardinfoP.appendChild(titleh2P);
+                cardinfoP.appendChild(pinformationP);
+                cardinfoP.appendChild(events);
+                createCardsP.appendChild(cardinfoP);
+                document.querySelector("section.the-sectionP").appendChild(createCardsP);
+            }
+        });
+        return listofitmP;
+    } catch (error) {
+      console.log(error);
+    }
+};
+townApiP("towns", "Preston");
+
+
+//Soda Springs info
+const thejsonurlSodaSprings = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+const townApiss = async (key, value) => {
+    try {
+        const responsess = await fetch(`${thejsonurlSodaSprings}`);
+        const responsepart2ss = await responsess.json();
+        let listofitmss = responsepart2ss[key];
+        listofitmss.forEach((element) => {
+                if (element.name === value) {
+                    //create elements
+                    const createCardsss = document.createElement("div");
+                    let cardinfoss = document.createElement("div");
+                    let titleh2ss = document.createElement("h2");
+                    let pinformationss = document.createElement("p");
+                    let events = document.createElement("p");
+
+                    //set attributes
+                    createCardsss.setAttribute("class", "card");
+                    pinformationss.setAttribute("class", "motto-card");
+                    events.setAttribute("class", "par-card");
+
+                    //insert elements
+                    titleh2ss.innerHTML = `Upcoming Events`;
+                    pinformationss.innerHTML = element.motto;
+                    events.innerHTML = `${element.events[0]} <br> ${element.events[1]} <br> ${element.events[2]}`;
+                    cardinfoss.appendChild(titleh2ss);
+                    cardinfoss.appendChild(pinformationss);
+                    cardinfoss.appendChild(events);
+                    createCardsss.appendChild(cardinfoss);
+                    document.querySelector("section.the-sectionss").appendChild(createCardsss);
+                }
+            });
+        return listofitmss;
+    } catch (error) {
+      console.log(error);
+    }
+};
+townApiss("towns", "Soda Springs");
+
+//Fish Heaven info
+const thejsonurlFishH = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+const townApifh = async (key, value) => {
+    try {
+        const responsefh = await fetch(`${thejsonurlFishH}`);
+        const responsepart2fh = await responsefh.json();
+        let listofitmfh = responsepart2fh[key];
+        listofitmfh.forEach((element) => {
+            if (element.name === value) {
+                //create elements
+                const createCardsfh = document.createElement("div");
+                let cardinfofh = document.createElement("div");
+                let titleh2fh = document.createElement("h2");
+                let pinformationfh = document.createElement("p");
+                let events = document.createElement("p");
+
+                //set attributes
+                createCardsfh.setAttribute("class", "card");
+                pinformationfh.setAttribute("class", "motto-card");
+                events.setAttribute("class", "par-card");
+
+                //insert elements
+                titleh2fh.innerHTML = `Upcoming Events`;
+                pinformationfh.innerHTML = element.motto;
+                events.innerHTML = `${element.events[0]} <br> ${element.events[1]} <br> ${element.events[2]}`;
+                cardinfofh.appendChild(titleh2fh);
+                cardinfofh.appendChild(pinformationfh);
+                cardinfofh.appendChild(events);
+                createCardsfh.appendChild(cardinfofh);
+                document.querySelector("section.the-sectionfh").appendChild(createCardsfh);
+            }
+        });
+        return listofitmfh;
+    } catch (error) {
+      console.log(error);
+    }
+};
+townApifh("towns", "Fish Haven");

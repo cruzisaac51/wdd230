@@ -86,8 +86,36 @@ main {
 .action {
     display: flex;
     position: absolute;
-    min-width: -webkit-fill-available;
-    left: 0em;
+    left: 36.33%;
+    right: 36.33%;
+    background-color: rgb(0 0 0 / 80%);
+    margin: 1em 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.action2 {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    background-color: rgb(0 0 0 / 80%);
+    margin: 1em 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.action3 {
+    display: flex;
+    position: absolute;
+    right: 10%;
     background-color: rgb(0 0 0 / 80%);
     margin: 1em 1em;
     padding: 1em;
@@ -252,6 +280,18 @@ nav .active {
 }
 .the-section .card {
     background-color: var(--dark);
+}
+.the-sectionP .card {
+    background-color: var(--dark);
+}
+.the-sectionss .card {
+    background-color: var(--dark);
+}
+.the-sectionfh .card {
+    background-color: var(--dark);
+}
+.card h2{
+    color: var(--primary);
 }
 .par-card{
     color: var(--primary)

@@ -71,4 +71,41 @@
     .navigation li:first-child {
         display: none;
     }
+    .content-hero{
+        display:block
+    }
+    .hero{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .action, .action2, .action3{
+        top: 0;
+        display:block;
+        border-radius: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+    }
+    .weather{
+        display: flex;
+        align-items: center;
+    }
+    .weather ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .weather li{
+        font-size:initial;
+    }
+    .action{
+        grid-row: 1;
+    }
+    .action2{
+        grid-row: 2;
+    }
+    .action3{
+        grid-row:3
+    }
 }
